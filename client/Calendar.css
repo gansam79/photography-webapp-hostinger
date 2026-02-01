@@ -1,0 +1,177 @@
+/* React Big Calendar Customization */
+.rbc-calendar {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #1a1a1a;
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: white;
+    min-height: 700px;
+}
+
+.rbc-header {
+    padding: 12px 10px !important;
+    font-weight: 600 !important;
+    font-size: 0.85rem !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.05em !important;
+    color: #64748b !important;
+    /* slate-500 */
+    border-bottom: 2px solid #e2e8f0 !important;
+    background-color: #f8fafc !important;
+    /* slate-50 */
+}
+
+.rbc-month-view {
+    border: none !important;
+    border-radius: 12px !important;
+    overflow: hidden !important;
+}
+
+.rbc-day-bg {
+    border-left: 1px solid #f1f5f9 !important;
+}
+
+.rbc-month-row {
+    border-top: 1px solid #f1f5f9 !important;
+}
+
+.rbc-off-range-bg {
+    background-color: #f8fafc !important;
+}
+
+.rbc-today {
+    background-color: #fffbeb !important;
+    /* amber-50 */
+}
+
+.rbc-event {
+    background-color: #d4a574;
+    /* Gold */
+    border: none !important;
+    border-radius: 4px !important;
+    padding: 2px 5px !important;
+    font-size: 0.75rem !important;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1) !important;
+}
+
+.rbc-event:focus {
+    outline: none !important;
+}
+
+.rbc-toolbar {
+    margin-bottom: 20px !important;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 15px;
+}
+
+.rbc-toolbar button {
+    border: 1px solid #e2e8f0 !important;
+    color: #475569 !important;
+    font-family: 'Montserrat', sans-serif !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
+    margin-right: 5px !important;
+    padding: 8px 16px !important;
+    transition: all 0.2s !important;
+}
+
+.rbc-toolbar button:hover {
+    background-color: #f1f5f9 !important;
+    color: #1a1a1a !important;
+}
+
+.rbc-toolbar button.rbc-active {
+    background-color: #1a1a1a !important;
+    /* Charcoal */
+    color: white !important;
+    border-color: #1a1a1a !important;
+    box-shadow: none !important;
+}
+
+.rbc-toolbar-label {
+    font-family: 'Playfair Display', serif !important;
+    font-weight: 700 !important;
+    font-size: 1.5rem !important;
+    color: #1a1a1a !important;
+}
+
+.rbc-show-more {
+    color: #d4a574 !important;
+    /* Gold */
+    font-weight: 600 !important;
+    font-size: 0.8rem !important;
+}
+
+/* React Day Picker Customization (Mini Calendar) */
+.rdp {
+    --rdp-cell-size: 40px;
+    --rdp-accent-color: #d4a574;
+    /* Gold */
+    --rdp-background-color: #fefce8;
+    /* Gold-50 */
+    margin: 0 !important;
+}
+
+.rdp-button:hover:not([disabled]):not(.rdp-day_selected) {
+    background-color: #f8fafc !important;
+}
+
+.rdp-day_selected {
+    background-color: #1a1a1a !important;
+    /* Charcoal */
+    color: white !important;
+    font-weight: bold;
+}
+
+.rdp-day_today {
+    font-weight: bold;
+    color: #d4a574;
+}
+
+.rdp-head_cell {
+    font-family: 'Playfair Display', serif;
+    color: #64748b;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.rdp-caption_label {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.rdp-nav_button {
+    color: #64748b;
+}
+
+/* Custom Holiday/Order Classes for Big Calendar (match JS logic) */
+.rbc-event.type-holiday {
+    background: #fee2e2 !important;
+    /* red-100 */
+    border-left: 3px solid #ef4444 !important;
+    color: #991b1b !important;
+}
+
+.rbc-event.type-order-Pending {
+    background: #fef3c7 !important;
+    /* amber-100 */
+    border-left: 3px solid #f59e0b !important;
+    color: #92400e !important;
+}
+
+.rbc-event.type-order-InProgress {
+    background: #dbeafe !important;
+    /* blue-100 */
+    border-left: 3px solid #3b82f6 !important;
+    color: #1e40af !important;
+}
+
+.rbc-event.type-order-Delivered {
+    background: #d1fae5 !important;
+    /* emerald-100 */
+    border-left: 3px solid #10b981 !important;
+    color: #065f46 !important;
+}

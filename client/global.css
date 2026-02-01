@@ -1,0 +1,160 @@
+/** @import must precede all other statements */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /**
+   * Luxury Photography Theme
+   * Color scheme: White, Gold, and Charcoal Black
+   */
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 10%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 10%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 39 85% 60%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 0 0% 90%;
+    --muted-foreground: 0 0% 40%;
+
+    --accent: 39 85% 60%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 90%;
+    --input: 0 0% 95%;
+    --ring: 39 85% 60%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 0 0% 15%;
+    --sidebar-primary: 39 85% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 90%;
+    --sidebar-accent-foreground: 0 0% 15%;
+    --sidebar-border: 0 0% 85%;
+    --sidebar-ring: 39 85% 60%;
+  }
+
+  .dark {
+    --background: 0 0% 8%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 12%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 12%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 39 85% 60%;
+    --primary-foreground: 0 0% 8%;
+
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 0 0% 8%;
+
+    --muted: 0 0% 25%;
+    --muted-foreground: 0 0% 70%;
+
+    --accent: 39 85% 60%;
+    --accent-foreground: 0 0% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 20%;
+    --input: 0 0% 15%;
+    --ring: 39 85% 60%;
+
+    --sidebar-background: 0 0% 10%;
+    --sidebar-foreground: 0 0% 90%;
+    --sidebar-primary: 39 85% 60%;
+    --sidebar-primary-foreground: 0 0% 8%;
+    --sidebar-accent: 0 0% 20%;
+    --sidebar-accent-foreground: 0 0% 90%;
+    --sidebar-border: 0 0% 18%;
+    --sidebar-ring: 39 85% 60%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Playfair Display", serif;
+  }
+
+  :where(p, span, li, a, button, label, td, th) {
+    overflow-wrap: anywhere;
+    word-break: break-word;
+  }
+
+  pre,
+  code {
+    overflow-x: auto;
+    white-space: pre;
+  }
+}
+
+.page-shell {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Luxury styling */
+@layer components {
+  .luxury-section {
+    @apply bg-white dark:bg-charcoal-900 border border-gold-200 dark:border-charcoal-700 rounded-lg shadow-sm;
+  }
+
+  .luxury-card {
+    @apply bg-white dark:bg-charcoal-800 border border-gold-100 dark:border-charcoal-700 rounded-lg p-6 shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .luxury-button {
+    @apply bg-gold-500 hover:bg-gold-600 text-white font-montserrat font-medium py-2 px-4 rounded transition-colors;
+  }
+
+  .luxury-text-title {
+    @apply font-playfair text-3xl font-bold text-charcoal-900 dark:text-white;
+  }
+
+  .luxury-text-subtitle {
+    @apply font-playfair text-2xl font-semibold text-charcoal-800 dark:text-charcoal-100;
+  }
+}
+
+
+.recharts-responsive-container .recharts-default-legend {
+    padding: 10px !important;
+    margin: 8px !important;
+    text-align: center !important;
+}
