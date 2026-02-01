@@ -1,0 +1,1 @@
+# photography-webapp-hostinger
